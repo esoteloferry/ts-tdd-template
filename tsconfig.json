@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "module": "commonjs",
-    "lib": ["es5", "dom"],
+    "lib": ["es6", "dom"],
     "allowJs": true,
     "sourceMap": true,
     "outDir": "./dist",
@@ -32,9 +32,9 @@
     /* Advanced Options */
     "skipLibCheck": true,
     /* Skip type checking of declaration files. */
-    "forceConsistentCasingInFileNames": true,
+    "forceConsistentCasingInFileNames": true
     /* Disallow inconsistently-cased references to the same file. */
 
   },
-  "include": ["src/**/*.ts"]
+  "include": ["src/**/*.ts", "src/**/*.js"]
 }
