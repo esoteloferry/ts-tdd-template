@@ -21,7 +21,7 @@ export function main(n: number): string {
     new THREE.PerspectiveCamera(10, 2, 0.2, 10),
     document.createElement("canvas")
   );
-  console.log(orb.center); //Print to avoid lint ts of var unused
+  console.log(orb.domElement); //Print to avoid lint ts of var unused
 
   return `Result square is ${squareResult} and cubic is ${cubicResult}`;
 }
