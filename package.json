@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "test": "jest"
+    "transpile-ts": "tsc",
+    "test": "jest",
+    "test-coverage": "jest --coverage",
+    "dev": "webpack-dev-server",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "esf",
@@ -14,7 +17,11 @@
     "@types/jest": "^26.0.0",
     "jest": "^26.0.1",
     "ts-jest": "^26.1.0",
-    "typescript": "^3.9.5"
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
     "three": "^0.117.1"
