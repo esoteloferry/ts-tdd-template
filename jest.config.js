@@ -1,3 +1,6 @@
+const { pathsToModuleNameMapper } = require("ts-jest/utils");
+const { compilerOptions } = require("./tsconfig.json");
+
 module.exports = {
   //Include ts and js(js is optional if you need to use old code)
   //Somehow the default preset: ts-jest does not work well with js files
@@ -6,4 +9,7 @@ module.exports = {
   },
   testEnvironment: "jsdom",
   testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.(ts|js)x?$",
+  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
+    prefix: "<rootDir>/",
+  }),
 };

@@ -15,6 +15,12 @@ module.exports = {
 
   resolve: {
     extensions: [".ts", ".js"],
+
+    // Shortcuts to avoid up-one-level hell:
+    // Turns "../../../utils" into "Utils"
+    alias: {
+      "@Entities": path.resolve(__dirname, "./src/entities/"),
+    },
   },
 
   module: {

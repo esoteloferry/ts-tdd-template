@@ -1,5 +1,5 @@
-import { square } from "./entities/square";
-import { cubic } from "./entities/cubic";
+import { square } from "@Entities/square";
+import { cubic } from "@Entities/cubic";
 import * as THREE from "three";
 import { OrbitControls } from "./threeExtras/controls/OrbitControls";
 
