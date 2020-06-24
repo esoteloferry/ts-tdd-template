@@ -9,7 +9,7 @@ module.exports = {
 
   // Outputs compiled bundle to `./web/js/main.js`
   output: {
-    path: __dirname + "/web/",
+    path: path.resolve(__dirname + "/web/"),
     filename: "js/[name].js",
   },
 
@@ -36,10 +36,9 @@ module.exports = {
 
   // Enables dev server to be accessed by computers in local network
   devServer: {
-    contentBase: path.join(__dirname, "web"),
+    contentBase: "web",
     host: "0.0.0.0",
     port: 8000,
-    publicPath: "/web/",
     disableHostCheck: true,
     open: true,
   },
